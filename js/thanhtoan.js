@@ -134,7 +134,7 @@ logoutButton.addEventListener("click", function () {
   localStorage.setItem("users", JSON.stringify(users));
   Swal.fire("Đăng xuất thành công", "Cảm ơn bạn", "success");
   setTimeout(
-    " window.location.href = 'http://127.0.0.1:5500/dangnhap.html';",
+    " window.location.href = 'http://127.0.0.1:5503/dangnhap.html';",
     500
   );
 });

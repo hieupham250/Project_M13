@@ -183,7 +183,7 @@ logoutButton.addEventListener("click", function () {
   localStorage.setItem("users", JSON.stringify(users));
   Swal.fire("Đăng xuất thành công", "Cảm ơn bạn", "success");
   setTimeout(
-    " window.location.href = 'http://127.0.0.1:5500/dangnhap.html';",
+    " window.location.href = 'http://127.0.0.1:5503/dangnhap.html';",
     500
   );
 });
@@ -193,7 +193,7 @@ logoutButton.addEventListener("click", function () {
 userNameLink.onclick = function () {
   // xét vị trí của user đang online trong mảng user vào localStorage
   localStorage.setItem("useronline", JSON.stringify(userOnl));
-  window.location.href = "http://127.0.0.1:5500/xemthongtinuser.html";
+  window.location.href = "http://127.0.0.1:5503/xemthongtinuser.html";
 };
 
 //chức năng xem chi tiết
@@ -225,5 +225,5 @@ containerBanh.addEventListener("click", function (event) {
   let productId = event.target.id;
   // xét productId của sản phẩm đang chọn xem trong mảng products vào localStorage
   localStorage.setItem("productView", JSON.stringify(productId));
-  window.location.href = "http://127.0.0.1:5500/sanphamxemchitiet.html";
+  window.location.href = "http://127.0.0.1:5503/sanphamxemchitiet.html";
 });

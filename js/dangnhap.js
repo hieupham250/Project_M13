@@ -29,7 +29,7 @@ loginForm.onsubmit = function (event) {
     if (users[check].role == "admin") {
       Swal.fire("Đăng nhập thành công", "xin chào admin", "success");
       setTimeout(
-        " window.location.href = 'http://127.0.0.1:5500/adminSP.html';",
+        " window.location.href = 'http://127.0.0.1:5503/adminSP.html';",
         500
       );
     } else {
@@ -79,7 +79,7 @@ loginForm.onsubmit = function (event) {
       }
       Swal.fire("Đăng nhập thành công", "Cảm ơn bạn", "success");
       setTimeout(
-        " window.location.href = 'http://127.0.0.1:5501/index.html';",
+        " window.location.href = 'http://127.0.0.1:5503/index.html';",
         500
       );
     }
