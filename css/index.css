@@ -1,0 +1,390 @@
+/* slider */
+.slider {
+    position: relative;
+}
+.slider .img-slider{
+    width: 100%;
+}
+.slider::before {
+    background-image: url(//bizweb.dktcdn.net/100/332/765/themes/880388/assets/rang-cua.png?1664352200908);
+    content: "";
+    height: 7px;
+    width: 100%;
+    background-repeat: repeat-x;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+}
+
+/* món ăn nổi bật */
+.food-noi-bat {
+    background: url(/img/bg_blog.png);
+    padding: 50px 0 80px;
+    margin: 0 auto;
+}
+.title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.title h3 a {
+    position: relative;
+    text-decoration: none;
+    font-size: 24px;
+    color: #333;
+}
+.title h3 a:hover {
+    color: #ef7147;
+}
+.title i {
+    font-size: 24px;
+    color: #ef7147;
+    margin-bottom: 10px;
+}
+.title a::before {
+    content: "";
+    width: 220px;
+    position: absolute;
+    border: 0.75px dashed #c3c3c3;
+    top: 50%;
+    left: -240px;
+}
+.title a::after {
+    content: "";
+    width: 220px;
+    position: absolute;
+    border: 0.75px dashed #c3c3c3;
+    top: 50%;
+    right: -240px;
+}
+.product-item {
+    border: 8px solid white;
+    border-radius: 6px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.product-item .product-img {
+    position: relative;
+    margin-bottom: 38px;
+}
+
+.owl-stage-outer {
+    padding-top: 10px;
+}
+.product-item .discount {
+    background-image: url(/img/bg_discount.png);
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -16px;
+    left: 16px;
+    width: 72px;
+    height: 76px;
+    text-align: center;
+    line-height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+}
+
+.product-action {
+    position: absolute;
+    right: 50%;
+    transform: translate(50% ,0);
+    bottom: -24px;
+    display: flex;
+}
+
+.product-action i {
+    color: white;
+}
+.product-action .btn_view {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #ef7147;
+    border: solid 3px #fff;
+    margin-right: 4px;
+    transition: all linear 0.3s;
+}
+.product-action .btn_cart {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #ef7147;
+    border: solid 3px #fff;
+    margin-left: 4px;
+    transition: all linear 0.3s;
+}
+
+.product-action .btn_delete {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #ef7147;
+    border: solid 3px #fff;
+    margin-left: 4px;
+    transition: all linear 0.3s;
+}
+
+.product-action .btn_mua {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: #ef7147;
+    border: solid 3px #fff;
+    margin-left: 4px;
+    transition: all linear 0.3s;
+}
+.product-action .btn_view:hover,
+.product-action .btn_cart:hover,.product-action .btn_delete:hover,.product-action .btn_mua:hover {
+    background-color: white;
+    border: 3px solid #ef7147;
+}
+.product-action .btn_view:hover i,
+.product-action .btn_cart:hover i,.product-action .btn_delete:hover i,.product-action .btn_mua:hover i {
+    color: #ef7147;
+}
+
+.product-item:hover img {
+    filter: opacity(0.5); /* làm mờ ảnh khi di chuột*/
+}
+
+.product-item .product-info {
+    padding: 0 10px;
+}
+.product-item .product-name {
+    color: black;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 0 10px;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+}
+.product-item .product-name:hover {
+    color: #ef7147;
+}
+
+.product-item .price {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.price .price-new {
+    color: #ef7147;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.price .price-old {
+    text-decoration: line-through;
+    font-size: 16px;
+    color: #a3a3a3;
+    margin-left: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.owl-dots {
+    display: flex;
+    justify-content: center;
+}
+.owl-carousel button.owl-dot {
+    border: 8px solid gainsboro;
+    margin: 0 3px;
+    border-radius: 50%;
+}
+.owl-carousel button.owl-dot.active {
+    border: 8px solid #ef7147;
+}
+
+/* mmón ăn ưa chuộng */
+.food-ua-chuong {
+    background-image: url(/img/bg_about.png);
+    padding: 50px 0 80px;
+    margin: 0 auto;
+}
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.nav-tabs {
+    background-color: white;
+    border-radius: 20px;
+}
+.nav-tabs .nav-link {
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    min-width: 140px;
+    margin: 0;
+}
+.nav-tabs .nav-link.active{
+    color: white;
+    background-color: #ef7147;
+}
+.nav-tabs .nav-link:hover {
+    color: white;
+    background-color: #ef7147;
+}
+
+/* món ăn mới */
+.food-new {
+    background-image: url(/img/bg_product_new.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0 80px;
+    margin: 0 auto;
+}
+
+.food-new .title a {
+    color: white;
+}
+.food-new-product .food-new-card {
+    background-color: rgba(255, 255, 255, 0.102);
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    display: flex;
+}
+.food-new-card .product-img {
+    padding: 10px;
+    border-radius: 4px;
+    background-color: white;
+}
+.food-new-card img {
+    width: 100px;
+}
+    
+.food-new-card .product-info {
+    margin-left: 20px;
+    padding: 10px;
+}
+.food-new-card .product-name {
+    color: white;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.food-new-card .product-name:hover{
+    color: #ef7147;
+}
+.food-new-card .price-new {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.food-new-card .description {
+    display: block;
+}
+/* blog */
+.blog {
+    background-image: url(/img/bg_about.png);
+    padding: 50px 0 80px;
+    margin: 0 auto;
+}
+.blog-content img {
+    border: 7px solid white;
+    border-radius: 6px;
+}
+.blog-content .blog_tag {
+    background-color: #ef7147;
+    padding: 6px 12px;
+    border-radius: 6px;
+    margin-top: 10px;
+    display: inline-block;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.blog-content .title-blog{
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
+    display: block;
+    min-height: 48px;
+    margin-bottom: 6px;
+}
+.blog-content .title-blog:hover {
+    color: #ef7147;
+}
+.readmore {
+    color: #ef7147;
+    text-decoration: underline;
+    font-style: italic;
+    margin: 8px 0;
+    display: block;
+    font-size: 14px;
+}
+.readmore:hover {
+    color: #333;
+}
+/* about */
+.about {
+    background-image: url(/img/bg_blog.png);
+    padding: 60px 0 120px;
+    margin: 0 auto;
+}
+.about-left .img-girl {
+    border: 8px solid white;
+    border-radius: 6px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.about-right .description{
+    margin-top: 20px;
+}
+.about-right .icon-about {
+    border-top: 2px dashed #c3c3c3;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.about-right .icon-about i {
+    font-size: 25px;
+    margin: 0 2px;
+}
+.icon-about .fb{
+    color: rgb(0, 98, 255);
+}
+.icon-about .gg{
+    color: rgb(255, 64, 0);
+}
+.icon-about .ig{
+    color: rgb(255, 0, 217);
+}
+/* service */
+.service {
+    margin-top: -40px;
+    margin-bottom: 50px;
+}
+
+.service .title-service {
+    margin: 14px 0;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.service .description {
+    font-size: 16px;
+}
+.service .description span {
+    font-weight: 700;
+    color: #3a3a3a;
+}
+/* khi màn hình nhỏ hơn 991.98px */
+@media screen and (max-width:991.98px) { 
+    .title a::before {
+        display: none;
+    }
+    .title a::after {
+        display: none;
+    }
+    .product-action{
+        display: none;
+    }
+}

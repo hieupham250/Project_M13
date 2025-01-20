@@ -1,0 +1,137 @@
+/* Header top */
+.header-top {
+  height: 50px;
+  line-height: 50px;
+  border-bottom: 2px dashed gainsboro;
+}
+
+.contact_header span {
+  font-size: 14px;
+  color: #8d8d8d;
+  font-weight: 500;
+}
+.contact_header .fone {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ef7147;
+  text-decoration: none; /* bỏ gạch chân thẻ a */
+}
+.contact_header .fone:hover {
+  color: black; /* khi hover vào đổi màu */
+}
+.header-top .account_header {
+  text-align: end;
+}
+.account_header a {
+  font-size: 14px;
+  color: #8d8d8d;
+  font-weight: 600; /* độ dày chữ 600 */
+  text-decoration: none; /* bỏ gạch chân thẻ a */
+}
+.account_header a:hover {
+  color: #ef7147; /* khi hover vào đổi màu */
+}
+.account_header span {
+  font-size: 14px;
+  color: #8d8d8d;
+  padding: 0 3px; /* cách trong 2 bên trái phải 3px */
+  font-weight: 600; /* độ dày chữ 600 */
+}
+.header-top .header_search {
+  position: relative;
+  text-align: end;
+}
+.header-top .header_search input {
+  height: 30px;
+  border-radius: 5px;
+  background: #eeeeee;
+  outline: none;
+  padding: 0 35px 0 15px;
+  font-size: 14px;
+  border: none;
+  width: 270px;
+}
+.header-top .header_search .btnSearch {
+  position: absolute;
+  padding: 0 10px;
+  top: 11px;
+  right: 15px;
+  height: 30px;
+  line-height: 30px;
+  color: #ef7147;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Header bottom */
+.navbar {
+  min-height: 100px;
+}
+.nav-item {
+  position: relative;
+  margin: 0 8px;
+}
+.nav-link {
+  color: black;
+  font-weight: 600;
+  font-size: 16px;
+}
+.nav-link:hover {
+  color: #ef7147;
+}
+.nav-link.active {
+  color: #ef7147;
+}
+
+.header-cart {
+  display: flex;
+  align-items: center;
+}
+.header-cart-left {
+  background-color: #ef7147;
+  position: relative;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+.header-cart-left i {
+  color: black;
+}
+.cart_qty {
+  color: white;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: black;
+  top: -12px;
+  right: -12px;
+  border-radius: 50%;
+}
+.header-cart-left:hover {
+  opacity: 0.6;
+}
+.block-count {
+  font-size: 14px;
+}
+.card-show {
+  display: none;
+}
+/* khi màn hình nhỏ hơn 1199.98px */
+@media screen and (max-width: 1199.98px) {
+  .login-signUp {
+    display: none;
+  }
+  .nav-link {
+    margin: 2px 0;
+  }
+  .navbar-collapse {
+    text-align: center;
+  }
+  .header-cart {
+    display: inline-block;
+  }
+}
+.logout:hover {
+  cursor: pointer;
+}

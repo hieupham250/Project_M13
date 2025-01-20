@@ -1,0 +1,25 @@
+.breadcrumb{
+    padding: 20px 0 15px 0;
+    background-color: unset;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #333;
+}
+.breadcrumb a:hover{
+    color: #ef7147;
+}
+.breadcrumb li:last-child{
+    color: #ef7147;
+}
+
+.intro{
+    background-image: url(/img/bg_about.png);
+    padding-bottom: 30px;
+}
+.intro p{
+    line-height: 1.7;
+}
+.intro p span{
+    font-weight: 700;
+}

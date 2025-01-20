@@ -1,0 +1,67 @@
+.breadcrumb {
+    padding: 20px 0 15px 0;
+    background-color: unset;
+}
+
+.breadcrumb a {
+    text-decoration: none;
+    color: #333;
+}
+
+.breadcrumb a:hover {
+    color: #ef7147;
+}
+
+.breadcrumb li:last-child {
+    color: #ef7147;
+}
+
+.DangKi {
+    background-image: url(/img/bg_about.png);
+    padding-bottom: 40px;
+}
+.form {
+    background-color: white;
+    width: 380px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+.form-group label {
+    font-weight: 500;
+}
+.form-group .required {
+    color: red;
+}
+.btnDangKi {
+    background-color: #ef7147;
+    width: 100%;
+}
+.btnDangKi:hover {
+    background-color: rgb(234, 53, 17);
+    color: white;
+}
+.iconDangKi a {
+    font-size: 16px;
+    padding: 8px;
+    color: white;
+    width: 110px;
+    display: inline-block;
+    text-decoration: none;
+}
+.iconDangKi .fb{
+    background-color: rgb(0, 149, 255);
+}
+.iconDangKi .gg{
+    background-color: rgb(255, 64, 0);
+}
+.iconDangKi i{
+    padding-right: 8px
+}
+
+@media screen and (max-width:400px) {
+    .form {
+        width: 100%;
+    }
+}

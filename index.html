@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delicious Cake & Drink</title>
+  <link rel="icon" type="image/x-icon" href="img/img2.jpg">
+  <!-- OwlCarouse-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <!-- font-awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/index.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10"></link>
+
+</head>
+
+<body>
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-5">
+            <div class="contact_header">
+              <span>Hotline: </span>
+              <a class="fone" href="tel:19006750">1900 6750</a>
+            </div>
+          </div>
+          <div class="col-7 login-signUp">
+            <div class="row">
+              <div class="header_search col-7">
+                <input
+                  type="text"
+                  name=""
+                  placeholder="Tìm sản phẩm"
+                  required
+                />
+                <button class="btnSearch">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </div>
+              <div id="myAccountHeader" class="account_header col-4">
+                <a href="/dangnhap.html">Đăng nhập</a>
+                <span> & </span>
+                <a href="/dangki.html">Đăng kí</a>
+              </div>
+              <div
+                style="display: none"
+                id="userOnline"
+                class="account_header col-5"
+              >
+                <img id="avatar" style="width: 30px" src="#" alt="" />
+                <a id="userName" href="#"></a>
+                <span id="logout" class="logout"
+                  ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg px-0">
+          <!-- logo -->
+          <a class="navbar-brand" href="#">
+            <img src="./img/logo.jpg" alt="">
+          </a>
+          <!-- nút menu khi màn hình chuyển sang điện thoại thì hiện ra -->
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <!--  thanh điều hướng-->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="/index.html"><i class="fa-solid fa-house"></i> Trang chủ </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./sanpham.html">
+                  <i class="fa-solid fa-cake-candles"></i> Sản phẩm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./gioithieu.html"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./blog.html"><i class="fa-solid fa-pen-to-square"></i> Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./lienhe.html"><i class="fa-solid fa-phone"></i> Liên hệ</a>
+              </li>
+            </ul>
+            <!-- giỏ hàng nếu có card-show sẽ ẩn đi-->
+            <div id="card-show" class="header-cart card-show">
+              <a class="" href="/giohang.html">
+                <div class="header-cart-left mr-3">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  <span id="quantity1" class="quantity cart_qty"></span>
+                </div>
+              </a>
+              <div class="header-cart-right">
+                <h6 class="text-cart mb-1">GIỎ HÀNG</h6>
+                <span class="block-count">(<span id="quantity2" class="quantity"></span>) sản phẩm</span>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!-- slider -->
+  <section class="slider">
+    <img class="img-slider" src="./img/slider_1.jpg" alt="">
+  </section>
+  <!--sản phẩm nổi bật -->
+  <section class="food-noi-bat">
+    <div class="container">
+      <div class="title">
+        <i class="fa-solid fa-cake-candles"></i>
+        <h3><a href="/sanpham.html">SẢN PHẤM NỔI BẬT</a></h3>
+      </div>
+      <!-- Các button khi nhấn vào thì tab nội dung tương ứng sẽ hiện ra dựa vào active -->
+      <nav class="tabs">
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+          <button class="nav-link active" id="nav-banh-tab" data-toggle="tab" data-target="#nav-banh" type="button"
+            role="tab" aria-controls="nav-home" aria-selected="true">Bánh</button>
+          <button class="nav-link" id="nav-tra-tab" data-toggle="tab" data-target="#nav-tra" type="button" role="tab"
+            aria-controls="nav-tra" aria-selected="false">Trà</button>
+        </div>
+      </nav>
+      <!-- Các tab content hiện ra dựa vào show active-->
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="nav-banh" role="tabpanel" aria-labelledby="nav-banh-tab">
+          <div class="row" id="product-container-banh">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- sản phẩm mới -->
+  <section class="food-new">
+    <div class="container">
+      <!-- title -->
+      <div class="title">
+        <i class="fa-solid fa-cake-candles"></i>
+        <h3><a href="/sanpham.html">SẢN PHẨM MỚI</a></h3>
+      </div>
+      <!-- new food -->
+      <div class="food-new-product">
+        <div id="product-container-moi" class="row">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- blog -->
+  <section class="blog">
+    <div class="container">
+      <!-- title -->
+      <div class="title">
+        <i class="fa-solid fa-cake-candles"></i>
+        <h3><a href="/blog.html">BLOG</a></h3>
+      </div>
+      <!-- blog content -->
+      <div class="blog-content">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="product-img">
+              <a href="#"> <img class="img-fluid" src="/img/img22.jpg" alt=""></a>
+            </div>
+            <span class="blog_tag">Lợi ích</span>
+            <a class="title-blog" href="">Những lợi ích tuyệt vời của dâu tây mà không phải ai cũng biết</a>
+            <a class="readmore" href="">Xem chi tiết</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="product-img">
+              <a href="#"> <img class="img-fluid" src="/img/img23.jpg" alt=""></a>
+            </div>
+            <span class="blog_tag">Đồ uống</span>
+            <a class="title-blog" href="">Trà hoa cúc chuẩn vị thưởng thức vào mỗi sáng mai</a>
+            <a class="readmore" href="">Xem chi tiết</a>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mb-5">
+            <div class="product-img">
+              <a href="#"> <img class="img-fluid" src="/img/img24.jpg" alt=""></a>
+            </div>
+            <span class="blog_tag">Công thức làm bánh</span>
+            <a class="title-blog" href="">Không cần lò nướng vẫn làm được bánh nếp cẩm xốp mềm thơm</a>
+            <a class="readmore" href="">Xem chi tiết</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- about -->
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="about-left">
+            <img class="img-girl" src="./img/banner_about.png" alt="">
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mb-4">
+          <div class="about-right">
+            <img src="./img/logo.jpg" alt="">
+            <p class="description">Được khởi xướng và vận hành bởi một nhóm người trẻ năng động, cửa hàng bánh ngọt và
+              đồ uống
+              DELICIOUS đang dần khẳng định chỗ đứng trong thị trường đồ ăn giải khát phong phú và đa dạng ở
+              Hà Nội. Hướng tới đối tượng khách hàng là các bạn trẻ năng động, chúng tôi quan tâm tới chất
+              lượng và hình ảnh của sản phẩm</p>
+            <a class="readmore" href="">Đọc thêm</a>
+            <div class="icon-about">
+              <span>Kết nối với chúng tôi:</span>
+              <a class="gg" href="#"> <i class="fa-brands fa-google"></i></a>
+              <a class="fb" href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a class="ig" href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- service -->
+  <section class="service">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-4 text-center">
+          <picture>
+            <img src="./img/service_1.png" alt="">
+          </picture>
+          <h5 class="title-service">CHUYỂN PHÁT NHANH</h5>
+          <p class="description">Chúng tôi miễn phí với đơn hàng trên <span>350.000đ</span> tại Hà Nội và free ship
+            toàn quốc với đơn hàng <span>700.000đ</span></p>
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+          <picture>
+            <img src="./img/service_2.png" alt="">
+          </picture>
+          <h5 class="title-service">LÀM BÁNH THEO YÊU CẦU</h5>
+          <p class="description">Một chiếc bánh được thiết kế riêng biệt, độc đáo dành cho người thân, bạn bè chắc
+            hẳn sẽ là một món quà bất ngờ và đặc biệt nhất</p>
+        </div>
+        <div class="col-12 col-lg-4 text-center">
+          <picture>
+            <img src="./img/service_3.png" alt="">
+          </picture>
+          <h5 class="title-service">HỖ TRỢ KHÁCH HÀNG</h5>
+          <p class="description">Trung tâm chăm sóc khách hàng của <br> DELICIOUS, hotline <span>1900 6750</span>
+            để được hỗ trợ giải đáp</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="title-menu">Liên hệ</h5>
+          <div class="address">
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="content-address">Quận Ba Đình, Hà Nội, Vietnam</div>
+            </div>
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="content-address">
+                <a href="tel:19006750">1900 6750</a>
+                <p>Thứ 2 - Chủ Nhật 9:00 - 18:00</p>
+              </div>
+            </div>
+            <div class="address-item">
+              <div class="icon-address">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="content-address">
+                <a href="">hieupham.com.vn</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="title-menu">Hỗ trợ khách hàng</h5>
+          <ul class="list-menu">
+            <li class="menu-item">
+              <a href="./index.html">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="./sanpham.html">Sản phẩm</a>
+            </li>
+            <li class="menu-item">
+              <a href="./gioithieu.html">Giới thiệu</a>
+            </li>
+            <li class="menu-item">
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="./lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="title-menu">Chính sách mua hàng</h5>
+          <ul class="list-menu">
+            <li class="menu-item">
+              <a href="./index.html">Trang chủ</a>
+            </li>
+            <li class="menu-item">
+              <a href="./sanpham.html">Sản phẩm</a>
+            </li>
+            <li class="menu-item">
+              <a href="./gioithieu.html">Giới thiệu</a>
+            </li>
+            <li class="menu-item">
+              <a href="./blog.html">Blog</a>
+            </li>
+            <li class="menu-item">
+              <a href="./lienhe.html">Liên hệ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3 mb-4">
+          <h5 class="title-menu">ĐĂNG KÝ NHẬN TIN</h5>
+          <p class="description">Đăng ký nhận thông tin khuyến mãi và sản phẩm mới</p>
+          <input type="text" class="form-control" placeholder="Nhập email của bạn">
+          <button class="btnDangki">ĐĂNG KÍ</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- bootstrap -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>

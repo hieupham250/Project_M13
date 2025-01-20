@@ -1,0 +1,157 @@
+.checkout {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+.checkout-left{
+    width: 65%;
+    padding: 20px 20px 100px 120px;
+    background-color: aliceblue;
+}
+.checkout-right{
+    width: 35%;
+    padding: 0 120px 100px 0;
+    border-left: 1px solid #ccc;
+    background-color: azure;
+}
+.checkout-left h2{
+    color: #0a80b7;
+}
+.checkout_info .title-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.checkout_info .login{
+    font-size: 18px;
+    color: #2a9dcc;
+    text-decoration: none;
+}
+.checkout_info .login:hover{
+    color: black;
+}
+.checkout_info textarea{
+    min-height: 100px;
+    padding: 10px;
+}
+.checkout_shipping .vanchuyen{
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+.checkout_shipping .vanchuyen .price{
+    float: right;
+}
+.checkout_shipping .ThToan{
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 4px;
+}
+.ThToan .content{
+    padding: 10px;
+}
+.ThToan .content i{
+    float: right;
+    font-size: 25px;
+    color: #1990c6;
+}
+.checkout_shipping .ThToan .des{
+    padding: 30px 10px;
+    background-color: rgb(238, 238, 238);
+}
+
+.checkout-right h4{
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+}
+.checkout-right .checkout_end{
+    padding-left: 20px;
+}
+.product-item{
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.product-item img {
+    width: 80px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+.product-item .product-name{
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.product-item input{
+    width: 60px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.price{
+    color: #ef7147;
+    text-align: end;
+}
+.checkout-right .discount{
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+}
+.discount input{
+    width: 300px;
+    outline: none;
+    border-radius: 6px;
+}
+.discount button{
+    padding: 7px;
+    background-color: #3785b0;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+}
+.discount button:hover{
+    background-color: #86969e;  
+}
+.tam-phi,
+.phi-vanchuyen,
+.total,
+.pay{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+.total{
+    border-top: 1px solid #ccc;
+    font-size: 20px;
+    font-weight: 600;
+}
+.pay a{
+    text-decoration: none;
+}
+.pay a:hover{
+    color: rgb(0, 0, 0);
+}
+.pay button{
+    border: none;
+    background-color: #1990c6;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 6px;
+}
+.pay button:hover{
+    background-color: #0a80b7;
+}
+@media screen and (max-width:991.98px) {
+    .checkout-left{
+        width: 100%;
+        padding: 20px;
+    }
+    .checkout-right{
+        display: none;
+    }
+}

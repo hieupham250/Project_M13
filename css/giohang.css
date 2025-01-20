@@ -1,0 +1,142 @@
+.breadcrumb{
+    padding: 20px 0 15px 0;
+    background-color: unset;
+}
+.breadcrumb a{
+    text-decoration: none;
+    color: #333;
+}
+.breadcrumb a:hover{
+    color: #ef7147;
+}
+.breadcrumb li:last-child{
+    color: #ef7147;
+}
+
+.giohang{
+    padding-bottom: 80px;
+    background-image: url(/img/bg_tab.png);
+}
+.table-product{
+    width: 100%;
+    margin: 20px 0;
+    background-color: #fff;
+}
+thead th{
+    height: 40px;
+    font-size: 16px;
+}
+thead,tbody,tr{
+    border: 1px solid #ffede7;
+    text-align: center;
+}
+
+
+.table-product .product-img{
+    width: 200px;
+    height: 160px;
+}
+.table-product .product-img img{
+    width: 100px;
+    height: 100px;
+    border: 6px solid #ffede7;
+    border-radius: 3px;
+}
+.table-product .product-name{
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+.table-product .product-name:hover{
+    color: #ef7147;
+}
+
+.qty{
+    position: relative;
+}
+.qty input{
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.qty .minus{
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 28px;
+    height: 28px;
+    line-height: 27px;
+    left: 28px;
+    border-radius: 20px 0 0 20px;
+}
+.qty .plus{
+    position: absolute;
+    border: 1px solid #ccc;
+    width: 28px;
+    height: 28px;
+    line-height: 27px;
+    right: 28px;
+    border-radius:0 20px 20px 0;
+}
+.product-price{
+    color: #ef7147;
+    font-size: 16px;
+    font-weight: 500;
+}
+.btn-remove{
+    color: rgb(99, 99, 99);
+}
+.btn-remove:hover{
+    color: #ef7147;
+}
+
+.thanhtoan .continue-btn{
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px 24px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    text-decoration: none;
+}
+.thanhtoan .continue-btn:hover{
+    border: 1px solid #ef7147;
+    color: #ef7147;
+}
+
+.thanhtoan .total{
+    background-color: #fff;
+    padding: 8px 24px;
+    border: 1px solid #eee;
+}
+.total .total-price{
+    float: right;
+    color: #ef7147;
+    font-size: 18px;
+}
+.thanhtoan .pay-btn{
+    width: 100%;
+    background-color: #ef7147;
+    border: 1px solid #ef7147;
+    border-radius: 6px;
+    padding: 8px 0;
+    margin-top: 20px;
+    color: #fff;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.thanhtoan .pay-btn:hover{
+    background-color: #fff;
+    color: #ef7147;
+}
+@media screen and (max-width:991.98px) {
+    .table-product{
+        display: none;
+    }
+    .thanhtoan{
+        display: none;
+    }
+}
